@@ -24,10 +24,7 @@
             font-weight: 300;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-300.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff');
         }
 
         @font-face {
@@ -36,10 +33,7 @@
             font-weight: 500;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-500.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff');
         }
 
         @font-face {
@@ -48,10 +42,7 @@
             font-weight: 700;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-700.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff');
         }
     </style>
 
@@ -59,7 +50,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
 
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-brand fixed-top" tabindex="0">
         <div class="container">
             <a class="navbar-brand pe-4 fs-4" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
@@ -72,35 +63,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html" aria-label="Brings you to the frontpage">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content.html">
-                            About Us
-                        </a>
-                    </li>
-                                        <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">
-                            Gallery
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">
-                            Work with us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">
-                            Testimonials
-                        </a>
-                    </li>
-
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                 </ul>
-
 
             </div>
         </div>
@@ -257,7 +227,7 @@
             </div>
 
         </div>
-               
+
         <!-- Features Section - Home Page -->
         <section id="features" class="features">
 
@@ -338,8 +308,7 @@
                             risus.
                         </p>
                         <p>
-                            <a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn more
-                            </a>
+                            <a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn more</a>
                         </p>
                     </div>
                 </div>
@@ -372,16 +341,6 @@
                                 <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
                             </h2>
 
-                            <!-- <div class="d-flex align-items-center">
-            <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-            <div class="post-meta">
-              <p class="post-author">Maria Doe</p>
-              <p class="post-date">
-                <time datetime="2022-01-01">Jan 1, 2022</time>
-              </p>
-            </div>
-          </div> -->
-
                         </article>
                     </div><!-- End post list item -->
 
@@ -398,16 +357,6 @@
                                 <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
                             </h2>
 
-                            <!-- <div class="d-flex align-items-center">
-            <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-            <div class="post-meta">
-              <p class="post-author">Allisa Mayer</p>
-              <p class="post-date">
-                <time datetime="2022-01-01">Jun 5, 2022</time>
-              </p>
-            </div>
-          </div> -->
-
                         </article>
                     </div><!-- End post list item -->
 
@@ -423,16 +372,6 @@
                             <h2 class="title">
                                 <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                             </h2>
-
-                            <!-- <div class="d-flex align-items-center">
-            <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-            <div class="post-meta">
-              <p class="post-author">Mark Dower</p>
-              <p class="post-date">
-                <time datetime="2022-01-01">Jun 22, 2022</time>
-              </p>
-            </div>
-          </div> -->
 
                         </article>
                     </div><!-- End post list item -->
@@ -474,145 +413,143 @@
             <div class="container">
 
                 <div class="row gy-4 align-items-stretch justify-content-between features-item ">
-                    
-                <div class="row gy-4 align-items-center features-item">
-                    <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                        <h3>Corporis temporibus maiores provident</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                        </p>
-                        <a href="#" class="btn btn-get-started">Get Started</a>
-                    </div>
-                    <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-                        <div class="image-stack">
-                            <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-                            <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+
+                    <div class="row gy-4 align-items-center features-item">
+                        <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Corporis temporibus maiores provident</h3>
+                            <p>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                            </p>
+                            <a href="#" class="btn btn-get-started">Get Started</a>
                         </div>
-                    </div>
-                </div><!-- Features Item -->
+                        <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                            <div class="image-stack">
+                                <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
+                                <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+                            </div>
+                        </div>
+                    </div><!-- Features Item -->
 
-                <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+                    <div class="row gy-4 align-items-stretch justify-content-between features-item ">
 
-                  <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                    <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div><!-- Features Item -->
+
+                    <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+                        <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div><!-- Features Item -->
                 </div>
-                    <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                        <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
-                    </div>
-                </div><!-- Features Item -->
-
-                
-
-                <div class="row gy-4 align-items-stretch justify-content-between features-item ">
-                    <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                        <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                        <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                        <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
-                    </div>
-                </div><!-- Features Item -->
-            </div>
 
         </section>
         <!-- ======= features-power Section ======= -->
-    <section id="features-power" class="features-power">
+        <section id="features-power" class="features-power">
 
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-              <h3>Powerful features-power for <br>Your Business</h3>
-  
-              <div class="row gy-4">
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Easy Cart features-power</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Sit amet consectetur</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Ipsum Rerum Explicabo</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Easy Cart features-power</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Easy Cart features-power</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Sit amet consectetur</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Ipsum Rerum Explicabo</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-  
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-check"></i>
-                    <span>Easy Cart features-power</span>
-                  </div>
-                </div><!-- End Icon List Item-->
-              </div>
-            </div>
-            <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-              <div class="phone-wrap">
-                <img src="assets/img/features-light-1.jpg" alt="Image" class="img-fluid">
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
-        <div class="details">
-          <div class="container" data-aos="fade-up" data-aos-delay="300">
-            <div class="row">
-              <div class="col-md-6">
-                <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-              </div>
-              <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-                <div class="phone-wrap">
-                  <img src="assets/img/features-light-1.jpg" alt="Image" class="img-fluid">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Powerful features-power for <br>Your Business</h3>
+
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Easy Cart features-power</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Sit amet consectetur</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Ipsum Rerum Explicabo</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Easy Cart features-power</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Easy Cart features-power</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Sit amet consectetur</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Ipsum Rerum Explicabo</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="bi bi-check"></i>
+                                    <span>Easy Cart features-power</span>
+                                </div>
+                            </div><!-- End Icon List Item-->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+                        <div class="phone-wrap">
+                            <img src="assets/img/features-light-1.jpg" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
-              </div>
+
             </div>
-            
-  
-          </div>
-        </div>
-  
-      </section><!-- End features-power Section -->
+
+            <div class="details">
+                <div class="container" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
+                        </div>
+                        <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="phone-wrap">
+                                <img src="assets/img/features-light-1.jpg" alt="Image" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section><!-- End features-power Section -->
 
         <div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
             <div class="container-fluid">
@@ -931,8 +868,6 @@
             </div>
         </div>
 
-        
-
         <div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-8 text-center">
@@ -956,7 +891,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -972,62 +906,54 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
                         <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                     </svg>
-                    <address class="text-secondary mt-3">
-                        <strong>Akalpa Events, Inc.</strong><br>
-                        1355 Market St, Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr>
-                        (123) 456-7890
-                    </address>
+                    <h5 class="text-secondary mt-3">
+                    
+                    <strong>Akalpa Events, Inc.</strong><br></h5>
+                     <p>   Together, let's transform your event into a masterpiece of cherished moments</p>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Company</h3>
+                    <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Lorem ipsum</a>
+                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services.html"><i class="bi bi-dash"></i>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Dolor sitam est</a>
+                            <a class="nav-link link-secondary ps-0" href="content.html"><i class="bi bi-dash"></i>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+                            <a class="nav-link link-secondary ps-0" href="gallery.html"><i class="bi bi-dash"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+                            <a class="nav-link link-secondary ps-0" href="contact-us.html"><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Products</h3>
+                    <h3 class="h6 mb-3">Our Services</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Fusce dapibus est</a>
+                        <li class="nav-item"> 
+                           <p><i class="bi bi-dash"></i>Wedding Planning</p>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Donec sed dui</a>
+                           <p><i class="bi bi-dash"></i>Corporate Events</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Ut fermentum massa</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Magna mollis</a>
-                        </li>
+                        <li class="nav-item"> 
+                            <p><i class="bi bi-dash"></i>Social Gathering Events</p>
+                         </li>
+                         <li class="nav-item">
+                            <p><i class="bi bi-dash"></i>Conferences and Trade shows</p>
+                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 p-5">
-                    <h3 class="h6 mb-3">Subpages</h3>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content
-                                Page</a>
-                        </li>
-                    </ul>
+                    <h3 class="h6 mb-3">Contact Us</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
                 </div>
             </div>
         </div>
@@ -1039,7 +965,7 @@
     <script src="app.js"></script>
     <script>
         AOS.init({
-            duration: 800, // values from 0 to 3000, with step 50ms
+            duration: 800,
         });
     </script>
 

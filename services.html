@@ -24,10 +24,7 @@
             font-weight: 300;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-300.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff');
         }
 
         @font-face {
@@ -36,10 +33,7 @@
             font-weight: 500;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-500.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff');
         }
 
         @font-face {
@@ -48,10 +42,7 @@
             font-weight: 700;
             font-display: swap;
             src: local(''),
-                url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('./fonts/inter-v12-latin-700.woff') format('woff');
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff');
         }
     </style>
 
@@ -59,7 +50,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
 
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-brand fixed-top" tabindex="0">
         <div class="container">
             <a class="navbar-brand pe-4 fs-4" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
@@ -72,41 +63,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html" aria-label="Brings you to the frontpage">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content.html">
-                            About us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#numbers">
-                            Numbers
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">
-                            Gallery
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#workwithus">
-                            Work with us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">
-                            Testimonials
-                        </a>
-                    </li>
-
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
                 </ul>
-
-
             </div>
         </div>
     </nav>
@@ -172,157 +136,157 @@
                     </div>
                 </div>
 
-            <!-- ======= Services Cards Section ======= -->
-            <section id="services-cards" class="services-cards">
-                <div class="container" data-aos="fade-up">
+                <!-- ======= Services Cards Section ======= -->
+                <section id="services-cards" class="services-cards">
+                    <div class="container" data-aos="fade-up">
 
-                    <div class="row gy-4">
+                        <div class="row gy-4">
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div >
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg);"></div>
-                                    </div>
-                                    <div class=" d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                                            <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div>
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg);"></div>
+                                        </div>
+                                        <div class=" d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                                <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div >
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg);"></div>
-                                    </div>
-                                    <div class=" d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                            <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div>
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg);"></div>
+                                        </div>
+                                        <div class=" d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                                <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div >
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg);"></div>
-                                    </div>
-                                    <div class=" d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                                            <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div>
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg);"></div>
+                                        </div>
+                                        <div class=" d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Error beatae dolor inventore aut</h4>
+                                                <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div >
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg);"></div>
-                                    </div>
-                                    <div class=" d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                                            <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div>
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg);"></div>
+                                        </div>
+                                        <div class=" d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
+                                                <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
+
+                        </div>
 
                     </div>
+                </section>
+                <!-- End Services Cards Section -->
+                <!-- ======= Services Cards Section ======= -->
+                <section id="services-cards" class="services-cards">
+                    <div class="container" data-aos="fade-up">
 
-                </div>
-            </section>
-            <!-- End Services Cards Section -->
-            <!-- ======= Services Cards Section ======= -->
-            <section id="services-cards" class="services-cards">
-                <div class="container" data-aos="fade-up">
+                        <div class="row gy-4">
 
-                    <div class="row gy-4">
-
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg);"></div>
-                                    </div>
-                                    <div class="col-xl-7 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                                            <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-xl-5">
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg);"></div>
+                                        </div>
+                                        <div class="col-xl-7 d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                                <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg);"></div>
-                                    </div>
-                                    <div class="col-xl-7 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                            <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-xl-5">
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg);"></div>
+                                        </div>
+                                        <div class="col-xl-7 d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                                <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg);"></div>
-                                    </div>
-                                    <div class="col-xl-7 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                                            <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-xl-5">
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg);"></div>
+                                        </div>
+                                        <div class="col-xl-7 d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Error beatae dolor inventore aut</h4>
+                                                <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                            <div class="card-item">
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg);"></div>
-                                    </div>
-                                    <div class="col-xl-7 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                                            <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-xl-5">
+                                            <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg);"></div>
+                                        </div>
+                                        <div class="col-xl-7 d-flex align-items-center">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
+                                                <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End Card Item -->
+                            </div><!-- End Card Item -->
+
+                        </div>
 
                     </div>
-
-                </div>
-            </section>
-            <!-- End Services Cards Section -->
-        </div>
+                </section>
+                <!-- End Services Cards Section -->
+            </div>
 
     </main>
 
@@ -334,62 +298,54 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
                         <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                     </svg>
-                    <address class="text-secondary mt-3">
-                        <strong>Akalpa Events, Inc.</strong><br>
-                        1355 Market St, Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr>
-                        (123) 456-7890
-                    </address>
+                    <h5 class="text-secondary mt-3">
+                    
+                    <strong>Akalpa Events, Inc.</strong><br></h5>
+                     <p>   Together, let's transform your event into a masterpiece of cherished moments</p>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Company</h3>
+                    <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Lorem ipsum</a>
+                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services.html"><i class="bi bi-dash"></i>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Dolor sitam est</a>
+                            <a class="nav-link link-secondary ps-0" href="content.html"><i class="bi bi-dash"></i>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+                            <a class="nav-link link-secondary ps-0" href="gallery.html"><i class="bi bi-dash"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+                            <a class="nav-link link-secondary ps-0" href="contact-us.html"><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Products</h3>
+                    <h3 class="h6 mb-3">Our Services</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Fusce dapibus est</a>
+                        <li class="nav-item"> 
+                           <p><i class="bi bi-dash"></i>Wedding Planning</p>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Donec sed dui</a>
+                           <p><i class="bi bi-dash"></i>Corporate Events</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Ut fermentum massa</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Magna mollis</a>
-                        </li>
+                        <li class="nav-item"> 
+                            <p><i class="bi bi-dash"></i>Social Gathering Events</p>
+                         </li>
+                         <li class="nav-item">
+                            <p><i class="bi bi-dash"></i>Conferences and Trade shows</p>
+                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 p-5">
-                    <h3 class="h6 mb-3">Subpages</h3>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content
-                                Page</a>
-                        </li>
-                    </ul>
+                    <h3 class="h6 mb-3">Contact Us</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
                 </div>
             </div>
         </div>
@@ -398,10 +354,10 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="app.js"></script>
+
     <script>
         AOS.init({
-            duration: 800, // values from 0 to 3000, with step 50ms
+            duration: 800,
         });
     </script>
 

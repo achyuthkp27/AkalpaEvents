@@ -14,233 +14,42 @@
     <meta name="HandheldFriendly" content="true" />
     <title>Akalpa Events</title>
     <link rel="stylesheet" href="css/theme.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-          #galler-window{
-    overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 80px auto 90px 90px;
-  grid-template-areas:
-    ". n n n n n n n n n n d"
-    "m c c c c c c c c c c a"
-    "s c c c c c c c c c c a"
-    "s . . . . . . . . . . b";
-  }
-
-
-.container-gal{
-  grid-area: c;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 20px;
-  grid-auto-flow: dense;
-  overflow: auto;
-  padding-right: 20px;  /*fix box-shadow on right side cutting off*/
-    -ms-overflow-style: none; 
-    overflow: -moz-scrollbars-none;  
-}
-.container-gal::-webkit-scrollbar { 
-    display: none;  
-}
-.container-gal>div{
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0,0,0,.2), 
-              5px 5px 25px rgba(0,0,0,.1);
-  transition: all .3s ease-in-out;
-}
-.container-gal div img{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all .6s ease-in-out;
-}
-.container-gal>div, .container-gal div img{
-/*   transition: all .6s ease-in-out; */
-}
-/*make bIG*/
-.container-gal>div:hover, .container-gal>div:hover img{
-  transform: scale(1.05);
-}
-.container-gal>div:hover img{
-  transform: scale(1.06);
-}
-.vertical{
-  grid-row: span 2;
-}
-.horizontal{
-  grid-column: span 2;
-}
-.big{
-  grid-row: span 2;
-  grid-column: span 2;
-}
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            overflow: hidden;
-            max-width: 1300px;
-            margin: auto;
-        }
-
-        .gallery__strip {
-            min-height: 100vh;
-        }
-
-        .gallery__strip__wrapper {
-            flex: 0 0 100%;
-            justify-content: flex-end;
-            background: #222;
-            border-right: 2px solid #333;
-            position: relative;
-        }
-
-        @media (min-width: 500px) {
-            .gallery__strip__wrapper {
-                flex: 0 0 50%;
-            }
-        }
-
-        @media (min-width: 950px) {
-            .gallery {
-                height: 100vh;
-            }
-
-            .gallery__strip.one {
-                animation: 60s move-it ease alternate infinite 5s;
-                transform: translateY(2%);
-            }
-
-            .gallery__strip.three {
-                animation: 70s move-it ease alternate infinite 6s;
-                transform: translateY(2%);
-            }
-
-            .gallery__strip.two {
-                animation: 58s move-it-2 ease alternate infinite 5s;
-                transform: translateY(-50%);
-            }
-
-            .gallery__strip.four {
-                animation: 65s move-it-2 ease alternate infinite 5.5s;
-                transform: translateY(-50%);
-            }
-
-            .gallery__strip:hover {
-                animation-play-state: paused;
-            }
-
-            .gallery__strip__wrapper {
-                flex: 0 0 25%;
-            }
-        }
-
-        .photo {
-            position: relative;
-            text-align: right;
-            padding-bottom: 3rem;
-        }
-
-        .photo__image img {
-            width: 90%;
-            transform: translateX(30%);
-            transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-        }
-
-        .photo__name {
-            text-transform: uppercase;
-            font-size: 40px;
-            letter-spacing: 2px;
-            color: transparent;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-            margin-top: -25px;
-            transition: 0.4s ease-in-out 0.4s;
-            position: relative;
-            width: 100%;
-        }
-
-        .photo:hover .photo__image img {
-            transform: translateX(0%);
-        }
-
-        .photo:hover .photo__name {
-            color: #fff;
-        }
-
-        @keyframes move-it {
-
-            0%,
-            90%,
-            100% {
-                transform: translateY(2%);
-            }
-
-            45% {
-                transform: translateY(-50%);
-            }
-        }
-
-        @keyframes move-it-2 {
-
-            0%,
-            90%,
-            100% {
-                transform: translateY(-50%);
-            }
-
-            45% {
-                transform: translateY(5%);
-            }
-        }
-
         /* inter-300 - latin */
         @font-face {
-            font-family: "Inter";
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 300;
             font-display: swap;
-            src: local(""), url("./fonts/inter-v12-latin-300.woff2") format("woff2"),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("./fonts/inter-v12-latin-300.woff") format("woff");
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            src: local(''),
+                url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff');
         }
 
         @font-face {
-            font-family: "Inter";
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 500;
             font-display: swap;
-            src: local(""), url("./fonts/inter-v12-latin-500.woff2") format("woff2"),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("./fonts/inter-v12-latin-500.woff") format("woff");
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            src: local(''),
+                url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff');
         }
 
         @font-face {
-            font-family: "Inter";
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: local(""), url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
-                /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("./fonts/inter-v12-latin-700.woff") format("woff");
-            /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            src: local(''),
+                url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff');
         }
     </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-brand fixed-top" tabindex="0">
         <div class="container">
             <a class="navbar-brand pe-4 fs-4" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
@@ -253,27 +62,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html" aria-label="Brings you to the frontpage">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content.html"> About us </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#numbers"> Numbers </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery"> Gallery </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#workwithus"> Work with us </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials"> Testimonials </a>
-                    </li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
                 </ul>
             </div>
         </div>
@@ -281,6 +76,56 @@
 
     <main>
         <div class="w-100 overflow-hidden bg-gray-100" id="top">
+            <!-- ======= Hero Section ======= -->
+            <section id="hero">
+                <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active" style="background-image: url(img/abstract2.jpg)">
+                            <div class="carousel-container">
+                                <div class="container">
+
+                                    <h2>Weddings</h2>
+                                    <p> Ut velit est quam dolor ad a aliquid qui aliquid.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item" style="background-image: url(img/abstract3.jpg)">
+                            <div class="carousel-container">
+                                <div class="container">
+                                    <h2>Destinations</h2>
+                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item" style="background-image: url(img/abstract4.jpg)">
+                            <div class="carousel-container">
+                                <div class="container">
+                                    <h2>Decor</h2>
+                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </section>
+            <!-- End Hero -->
             <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
                 <div class="row d-flex align-items-center justify-content-center py-vh-5">
                     <div class="col-12 col-xl-10">
@@ -298,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery">
+            <div class="gallery" id="main-gallery">
                 <div class="gallery__strip__wrapper">
                     <div class="gallery__strip one">
                         <div class="photo">
@@ -509,32 +354,32 @@
             <div id="galler-window">
 
                 <div class="container-gal">
-                  <div class="horizontal">
-                    <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
-                  </div>
-                  <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
-                  <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
-                  <div class="big"><img src="https://images.unsplash.com/photo-1486239154832-a989a601c41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="4"></div>
-                  <div class="vertical"><img src="https://images.unsplash.com/photo-1519458524098-335b2a5747b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="5"></div>
-                  <div><img src="https://images.unsplash.com/photo-1548737787-a776beb45cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt="6"></div>
-                  <div class="vertical"><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="7"></div>
-                  <div><img src="https://images.unsplash.com/photo-1474218861938-d6b14818c8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="8"></div>
-                  <div><img src="https://images.unsplash.com/photo-1502842113467-03fdcac39fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="8.1"></div>
-                  <div><img src="https://images.unsplash.com/photo-1548599042-0df640181771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="9"></div>
-                  <div class="big"><img src="https://images.unsplash.com/photo-1515405969538-5642ed9d0cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="10"></div>
-                  <div><img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="11"></div>
-                  <div class="horizontal"><img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="12"></div>
-                  <div><img src="https://images.unsplash.com/photo-1514673309919-5998bbbadf7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80" alt="12.1"></div>
-                  <div class="horizontal"><img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="13"></div>
-                  <div class="horizontal">
-                    <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
-                  </div>
-                  <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
-                  <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
-                  
+                    <div class="horizontal">
+                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
+                    </div>
+                    <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
+                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
+                    <div class="big"><img src="https://images.unsplash.com/photo-1486239154832-a989a601c41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="4"></div>
+                    <div class="vertical"><img src="https://images.unsplash.com/photo-1519458524098-335b2a5747b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="5"></div>
+                    <div><img src="https://images.unsplash.com/photo-1548737787-a776beb45cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt="6"></div>
+                    <div class="vertical"><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="7"></div>
+                    <div><img src="https://images.unsplash.com/photo-1474218861938-d6b14818c8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="8"></div>
+                    <div><img src="https://images.unsplash.com/photo-1502842113467-03fdcac39fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="8.1"></div>
+                    <div><img src="https://images.unsplash.com/photo-1548599042-0df640181771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="9"></div>
+                    <div class="big"><img src="https://images.unsplash.com/photo-1515405969538-5642ed9d0cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="10"></div>
+                    <div><img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="11"></div>
+                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="12"></div>
+                    <div><img src="https://images.unsplash.com/photo-1514673309919-5998bbbadf7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80" alt="12.1"></div>
+                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="13"></div>
+                    <div class="horizontal">
+                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
+                    </div>
+                    <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
+                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
+
                 </div>
-                
-                </div>
+
+            </div>
         </div>
     </main>
     <!-- ==== -->
@@ -542,75 +387,71 @@
     <footer>
         <div class="container small border-top">
             <div class="row py-5 d-flex justify-content-between">
+
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
                         <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                     </svg>
-                    <address class="text-secondary mt-3">
-                        <strong>Akalpa Events, Inc.</strong><br />
-                        1355 Market St, Suite 900<br />
-                        San Francisco, CA 94103<br />
-                        <abbr title="Phone">P:</abbr>
-                        (123) 456-7890
-                    </address>
+                    <h5 class="text-secondary mt-3">
+                    
+                    <strong>Akalpa Events, Inc.</strong><br></h5>
+                     <p>   Together, let's transform your event into a masterpiece of cherished moments</p>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Company</h3>
+                    <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Lorem ipsum</a>
+                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services.html"><i class="bi bi-dash"></i>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Dolor sitam est</a>
+                            <a class="nav-link link-secondary ps-0" href="content.html"><i class="bi bi-dash"></i>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+                            <a class="nav-link link-secondary ps-0" href="gallery.html"><i class="bi bi-dash"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+                            <a class="nav-link link-secondary ps-0" href="contact-us.html"><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <h3 class="h6 mb-3">Products</h3>
+                    <h3 class="h6 mb-3">Our Services</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Fusce dapibus est</a>
+                        <li class="nav-item"> 
+                           <p><i class="bi bi-dash"></i>Wedding Planning</p>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Donec sed dui</a>
+                           <p><i class="bi bi-dash"></i>Corporate Events</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Ut fermentum massa</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="#">Magna mollis</a>
-                        </li>
+                        <li class="nav-item"> 
+                            <p><i class="bi bi-dash"></i>Social Gathering Events</p>
+                         </li>
+                         <li class="nav-item">
+                            <p><i class="bi bi-dash"></i>Conferences and Trade shows</p>
+                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 p-5">
-                    <h3 class="h6 mb-3">Subpages</h3>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content Page</a>
-                        </li>
-                    </ul>
+                    <h3 class="h6 mb-3">Contact Us</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
                 </div>
             </div>
         </div>
+
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
     <script>
         AOS.init({
-            duration: 800, // values from 0 to 3000, with step 50ms
+            duration: 800,
         });
     </script>
 
@@ -633,6 +474,15 @@
                 remove_class_on_scroll();
             }
         });
+        const heroCarouselIndicators = document.querySelector("#hero-carousel-indicators");
+        const heroCarouselItems = document.querySelectorAll("#heroCarousel .carousel-item");
+
+        let indicatorsHTML = "";
+        heroCarouselItems.forEach((_, index) => {
+            indicatorsHTML += `<li data-bs-target='#heroCarousel' data-bs-slide-to='${index}'${index === 0 ? " class='active'" : ""}></li>`;
+        });
+
+        heroCarouselIndicators.innerHTML = indicatorsHTML;
     </script>
 </body>
 
