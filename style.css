@@ -497,9 +497,12 @@ a:hover {
 }
 
 .call-to-action h3 {
-  font-size: 28px;
+  font-family: "Cormorant Garamond",serif;
+  font-size: 50px;
   font-weight: 700;
   color: var(--default-color);
+  text-transform: uppercase;
+  letter-spacing: 20px;
 }
 
 .call-to-action p {
@@ -507,7 +510,6 @@ a:hover {
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -516,11 +518,11 @@ a:hover {
   border-radius: 5px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background: var(--bs-gray-900);
+  border: 2px solid var(--bs-gray-700);
 }

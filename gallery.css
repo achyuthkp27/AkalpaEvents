@@ -46,7 +46,6 @@
     transition: all 0.6s ease-in-out;
 }
 
-/*make bIG*/
 .container-gal>div:hover,
 .container-gal>div:hover img {
     transform: scale(1.05);
@@ -189,9 +188,6 @@
     }
 }
 
-/*--------------------------------------------------------------
-# Services Cards Section
---------------------------------------------------------------*/
 .services-cards {
     background: #f7f9fc;
 }
@@ -210,19 +206,14 @@
 }
 
 .services-cards .card-item .card-body {
-    padding: 30px;
+    padding: 20px;
 }
 
 .services-cards .card-item h4 {
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 15px;
-    color: var(--color-secondary);
-}
-
-.services-cards .card-item p {
-    color: var(--color-secondary);
-    margin: 0;
+    color: var(--bs-gray-700);
+    text-transform: uppercase;
 }
 
 #hero {
@@ -392,26 +383,4 @@
     #hero {
         height: 120vh;
     }
-}
-
-a {
-    text-decoration: none;
-}
-
-#more-arrows {
-    width: 75px;
-    height: 65px;
-}
-
-polygon {
-    fill: #fff;
-    transition: all 0.2s ease-out;
-}
-
-polygon.arrow-middle {
-    opacity: 0.75;
-}
-
-polygon.arrow-top {
-    opacity: 0.5;
 }

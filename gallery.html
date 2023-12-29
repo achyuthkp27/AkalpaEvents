@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
+<html class=h-100 lang=en>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
-    <meta name="author" content="Holger Koenemann" />
-    <meta name="generator" content="Eleventy v2.0.0" />
-    <meta name="HandheldFriendly" content="true" />
+    <meta charset=utf-8 />
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    
+    <link rel=apple-touch-icon sizes=180x180 href=img/apple-touch-icon.png />
+    <link rel=icon type=image/png sizes=32x32 href=img/favicon-32x32.png />
+    <link rel=icon type=image/png sizes=16x16 href=img/favicon-16x16.png />
+    <link rel=icon type=image/png sizes=96x96 href=img/favicon.png />
+    <meta name=author content="Akalpa" />
     <title>Akalpa Events</title>
-    <link rel="stylesheet" href="css/theme.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta content="Akalpa Events, we are the maestros of crafting unparalleled experiences in the realm of luxury weddings, corporate galas, social soirées, conferences, and trade show events." name="description">
+    <meta content="Akalpa, luxury weddings, corporate events, social gatherings, conference shows, trade shows, about akalpa, Akalpa Decorations, events, Akalpa events, Akalpa company, destination weddings, event planning, event management, bespoke events, exclusive events, event design, event coordination, event production, high-end events, VIP events, gala events, luxury event planner, premium event services, red carpet events, upscale gatherings, event styling, extravagant celebrations, lavish occasions, event logistics, custom event experiences"
+    name="keywords">
+    <link rel=stylesheet href=css/theme.min.css />
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin=anonymous referrerpolicy=no-referrer />
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin=anonymous referrerpolicy=no-referrer />
+    <link rel=stylesheet href=gallery.css />
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin=anonymous referrerpolicy=no-referrer />
     <style>
-        /* inter-300 - latin */
         @font-face {
             font-family: 'Inter';
             font-style: normal;
             font-weight: 300;
             font-display: swap;
-            src: local(''),
-                url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff');
+            src: local(''), url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff')
         }
 
         @font-face {
@@ -33,8 +33,7 @@
             font-style: normal;
             font-weight: 500;
             font-display: swap;
-            src: local(''),
-                url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff');
+            src: local(''), url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff')
         }
 
         @font-face {
@@ -42,80 +41,73 @@
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: local(''),
-                url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff');
+            src: local(''), url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff')
         }
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navScroll">
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-        <div class="container">
-            <a class="navbar-brand pe-4 fs-4" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
+<body data-bs-spy=scroll data-bs-target=#navScroll>
+    <nav id=navScroll class="navbar navbar-expand-lg navbar-light fixed-top" tabindex=0>
+        <div class=container>
+            <a class="navbar-brand pe-4 fs-4" href=#>
+                <svg xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-layers-half" viewbox="0 0 16 16">
                     <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                 </svg>
                 <span class="ms-1 fw-bolder">Akalpa Events</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+                <span class=navbar-toggler-icon></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id=navbarSupportedContent>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
-                    <li class="nav-item"><a class="nav-link" href="index" aria-label="Brings you to the frontpage">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="content">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li>
+                    <li class=nav-item><a class=nav-link href=index aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class=nav-item><a class=nav-link href=services>Services</a></li>
+                    <li class=nav-item><a class=nav-link href=content>About Us</a></li>
+                    <li class=nav-item><a class="nav-link active" href=gallery>Gallery</a></li>
+                    <li class=nav-item><a class=nav-link href=contact-us>Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <main>
-        <div class="w-100 overflow-hidden bg-gray-100" id="top">
-            <!-- ======= Hero Section ======= -->
-            <section id="hero">
-                <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
-                    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active" style="background-image: url(img/abstract2.jpg)">
-                            <div class="carousel-container">
-                                <div class="container">
+        <div class="w-100 overflow-hidden bg-gray-100" id=top>
+            <section id=hero>
+                <div id=heroCarousel class="carousel slide carousel-fade" data-bs-interval=3000 data-bs-ride=carousel>
+                    <ol class=carousel-indicators id=hero-carousel-indicators></ol>
+                    <div class=carousel-inner role=listbox>
+                        <div class="carousel-item active" style=background-image:url(img/abstract2.jpg)>
+                            <div class=carousel-container>
+                                <div class=container>
                                     <h2>Weddings</h2>
                                     <p>Ut velit est quam dolor ad a aliquid qui aliquid.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="background-image: url(img/abstract3.jpg)">
-                            <div class="carousel-container">
-                                <div class="container">
+                        <div class=carousel-item style=background-image:url(img/abstract3.jpg)>
+                            <div class=carousel-container>
+                                <div class=container>
                                     <h2>Destinations</h2>
                                     <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" style="background-image: url(img/abstract4.jpg)">
-                            <div class="carousel-container">
-                                <div class="container">
+                        <div class=carousel-item style=background-image:url(img/abstract4.jpg)>
+                            <div class=carousel-container>
+                                <div class=container>
                                     <h2>Decor</h2>
                                     <p>Ut velit est quam dolor ad a aliquid qui aliquid.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <a class=carousel-control-prev href=#heroCarousel role=button data-bs-slide=prev>
+                        <span class=carousel-control-prev-icon aria-hidden=true></span>
                     </a>
-            
-                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <a class=carousel-control-next href=#heroCarousel role=button data-bs-slide=next>
+                        <span class=carousel-control-next-icon aria-hidden=true></span>
                     </a>
                 </div>
             </section>
-            
-            <!-- End Hero -->
             <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
                 <div class="row d-flex align-items-center justify-content-center py-vh-5">
                     <div class="col-12 col-xl-10">
@@ -133,133 +125,132 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery" id="main-gallery">
-                <div class="gallery__strip__wrapper">
+            <div class=gallery id=main-gallery>
+                <div class=gallery__strip__wrapper>
                     <div class="gallery__strip one">
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg />
                             </div>
-                            <div class="photo__name">Kyoto</div>
+                            <div class=photo__name>Kyoto</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg />
                             </div>
-                            <div class="photo__name">Halstatt</div>
+                            <div class=photo__name>Halstatt</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg />
                             </div>
-                            <div class="photo__name">Peru</div>
+                            <div class=photo__name>Peru</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg />
                             </div>
-                            <div class="photo__name">Rio</div>
+                            <div class=photo__name>Rio</div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__strip__wrapper">
+                <div class=gallery__strip__wrapper>
                     <div class="gallery__strip two">
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg />
                             </div>
-                            <div class="photo__name">Italy</div>
+                            <div class=photo__name>Italy</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg />
                             </div>
-                            <div class="photo__name">Osaka</div>
+                            <div class=photo__name>Osaka</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg />
                             </div>
-                            <div class="photo__name">Bali</div>
+                            <div class=photo__name>Bali</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg />
                             </div>
-                            <div class="photo__name">Paris</div>
+                            <div class=photo__name>Paris</div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__strip__wrapper">
+                <div class=gallery__strip__wrapper>
                     <div class="gallery__strip three">
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg />
                             </div>
-                            <div class="photo__name">Cusco</div>
+                            <div class=photo__name>Cusco</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg />
                             </div>
-                            <div class="photo__name">Rome</div>
+                            <div class=photo__name>Rome</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg />
                             </div>
-                            <div class="photo__name">Paris</div>
+                            <div class=photo__name>Paris</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg />
                             </div>
-                            <div class="photo__name">Bali</div>
+                            <div class=photo__name>Bali</div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__strip__wrapper">
+                <div class=gallery__strip__wrapper>
                     <div class="gallery__strip four">
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg />
                             </div>
-                            <div class="photo__name">Milan</div>
+                            <div class=photo__name>Milan</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg />
                             </div>
-                            <div class="photo__name">Budapest</div>
+                            <div class=photo__name>Budapest</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg />
                             </div>
-                            <div class="photo__name">Vienna</div>
+                            <div class=photo__name>Vienna</div>
                         </div>
-                        <div class="photo">
-                            <div class="photo__image">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" />
+                        <div class=photo>
+                            <div class=photo__image>
+                                <img src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg />
                             </div>
-                            <div class="photo__name">Mexico</div>
+                            <div class=photo__name>Mexico</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ======= Services Cards Section ======= -->
-            <section id="services-cards" class="services-cards">
-                <div class="container" data-aos="fade-up">
+            <section id=services-cards class=services-cards>
+                <div class=container data-aos=fade-up>
                     <div class="row gy-4">
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-item">
-                                <div class="row">
+                        <div class=col-lg-6 data-aos=fade-up data-aos-delay=100>
+                            <div class="card-item shadow-sm">
+                                <div class=row>
                                     <div>
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg)"></div>
+                                        <div class=card-bg style=background-image:url(assets/img/cards-1.jpg)></div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">
+                                        <div class=card-body>
+                                            <h4 class=card-title>
                                                 Eligendi omnis sunt veritatis.
                                             </h4>
                                         </div>
@@ -267,17 +258,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Card Item -->
-
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-item">
-                                <div class="row">
+                        <div class=col-lg-6 data-aos=fade-up data-aos-delay=200>
+                            <div class="card-item shadow-sm">
+                                <div class=row>
                                     <div>
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg)"></div>
+                                        <div class=card-bg style=background-image:url(assets/img/cards-2.jpg)></div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">
+                                        <div class=card-body>
+                                            <h4 class=card-title>
                                                 Possimus ut sed velit assumenda
                                             </h4>
                                         </div>
@@ -285,17 +274,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Card Item -->
-
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-item">
-                                <div class="row">
+                        <div class=col-lg-6 data-aos=fade-up data-aos-delay=300>
+                            <div class="card-item shadow-sm">
+                                <div class=row>
                                     <div>
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg)"></div>
+                                        <div class=card-bg style=background-image:url(assets/img/cards-3.jpg)></div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">
+                                        <div class=card-body>
+                                            <h4 class=card-title>
                                                 Error beatae dolor inventore aut
                                             </h4>
                                         </div>
@@ -303,17 +290,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Card Item -->
-
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                            <div class="card-item">
-                                <div class="row">
+                        <div class=col-lg-6 data-aos=fade-up data-aos-delay=400>
+                            <div class="card-item shadow-sm">
+                                <div class=row>
                                     <div>
-                                        <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg)"></div>
+                                        <div class=card-bg style=background-image:url(assets/img/cards-4.jpg)></div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h4 class="card-title">
+                                        <div class=card-body>
+                                            <h4 class=card-title>
                                                 Expedita voluptas ut ut nesciunt
                                             </h4>
                                         </div>
@@ -321,103 +306,95 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Card Item -->
                     </div>
                 </div>
             </section>
-            <!-- End Services Cards Section -->
-            <section id="features" class="features">
-                <div class="container">
+            <section id=features class=features>
+                <div class=container>
                     <div class="row gy-4 align-items-stretch justify-content-between features-item">
-                        <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="" />
+                        <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos=zoom-out>
+                            <img src=assets/img/features-light-3.jpg class=img-fluid alt />
                         </div>
-                        <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="" />
+                        <div class="col-lg-3 d-flex align-items-center features-img-bg" data-aos=zoom-out>
+                            <img src=assets/img/features-light-3.jpg class=img-fluid alt />
                         </div>
-                        <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="" />
+                        <div class="col-lg-4 d-flex align-items-center features-img-bg" data-aos=zoom-out>
+                            <img src=assets/img/features-light-3.jpg class=img-fluid alt />
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="galler-window">
-
-                <div class="container-gal">
-                    <div class="horizontal">
-                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
+            <div id=galler-window>
+                <div class=container-gal>
+                    <div class=horizontal>
+                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt=1>
                     </div>
-                    <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
-                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
-                    <div class="big"><img src="https://images.unsplash.com/photo-1486239154832-a989a601c41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="4"></div>
-                    <div class="vertical"><img src="https://images.unsplash.com/photo-1519458524098-335b2a5747b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="5"></div>
-                    <div><img src="https://images.unsplash.com/photo-1548737787-a776beb45cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt="6"></div>
-                    <div class="vertical"><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="7"></div>
-                    <div><img src="https://images.unsplash.com/photo-1474218861938-d6b14818c8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="8"></div>
-                    <div><img src="https://images.unsplash.com/photo-1502842113467-03fdcac39fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="8.1"></div>
-                    <div><img src="https://images.unsplash.com/photo-1548599042-0df640181771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="9"></div>
-                    <div class="big"><img src="https://images.unsplash.com/photo-1515405969538-5642ed9d0cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="10"></div>
-                    <div><img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="11"></div>
-                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="12"></div>
-                    <div><img src="https://images.unsplash.com/photo-1514673309919-5998bbbadf7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80" alt="12.1"></div>
-                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="13"></div>
-                    <div class="horizontal">
-                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
+                    <div class=vertical><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt=2></div>
+                    <div class=horizontal><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt=3></div>
+                    <div class=big><img src="https://images.unsplash.com/photo-1486239154832-a989a601c41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=4></div>
+                    <div class=vertical><img src="https://images.unsplash.com/photo-1519458524098-335b2a5747b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=5></div>
+                    <div><img src="https://images.unsplash.com/photo-1548737787-a776beb45cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt=6></div>
+                    <div class=vertical><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt=7></div>
+                    <div><img src="https://images.unsplash.com/photo-1474218861938-d6b14818c8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt=8></div>
+                    <div><img src="https://images.unsplash.com/photo-1502842113467-03fdcac39fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=8.1></div>
+                    <div><img src="https://images.unsplash.com/photo-1548599042-0df640181771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=9></div>
+                    <div class=big><img src="https://images.unsplash.com/photo-1515405969538-5642ed9d0cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt=10></div>
+                    <div><img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt=11></div>
+                    <div class=horizontal><img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt=12></div>
+                    <div><img src="https://images.unsplash.com/photo-1514673309919-5998bbbadf7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80" alt=12.1></div>
+                    <div class=horizontal><img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt=13></div>
+                    <div class=horizontal>
+                        <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt=1>
                     </div>
-                    <div class="vertical"><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2"></div>
-                    <div class="horizontal"><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3"></div>
-
+                    <div class=vertical><img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt=2></div>
+                    <div class=horizontal><img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt=3></div>
                 </div>
-
             </div>
         </div>
     </main>
-    <!-- ==== -->
-
     <footer>
         <div class="container small border-top">
             <div class="row py-5 d-flex justify-content-between">
-
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
+                    <svg xmlns=http://www.w3.org/2000/svg width=24 height=24 fill=currentColor class="bi bi-layers-half" viewbox="0 0 16 16">
                         <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                     </svg>
                     <h5 class="text-secondary mt-3">
-                    
-                    <strong>Akalpa Events, Inc.</strong><br></h5>
-                     <p>   Together, let's transform your event into a masterpiece of cherished moments</p>
+                        <strong>Akalpa Events, Inc.</strong><br>
+                    </h5>
+                    <p> Together, let's transform your event into a masterpiece of cherished moments</p>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
                     <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item">                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services"><i class="bi bi-dash"></i>Services</a>
+                        <li class=nav-item> <a class="nav-link link-secondary ps-0" aria-current=page href=services><i class="bi bi-dash"></i>Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="content"><i class="bi bi-dash"></i>About Us</a>
+                        <li class=nav-item>
+                            <a class="nav-link link-secondary ps-0" href=content><i class="bi bi-dash"></i>About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="gallery"><i class="bi bi-dash"></i>Gallery</a>
+                        <li class=nav-item>
+                            <a class="nav-link link-secondary ps-0" href=gallery><i class="bi bi-dash"></i>Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="contact-us"><i class="bi bi-dash"></i>Contact Us</a>
+                        <li class=nav-item>
+                            <a class="nav-link link-secondary ps-0" href=contact-us><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
                     <h3 class="h6 mb-3">Our Services</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item"> 
-                           <p><i class="bi bi-dash"></i>Wedding Planning</p>
+                        <li class=nav-item>
+                            <p><i class="bi bi-dash"></i>Wedding Planning</p>
                         </li>
-                        <li class="nav-item">
-                           <p><i class="bi bi-dash"></i>Corporate Events</p>
+                        <li class=nav-item>
+                            <p><i class="bi bi-dash"></i>Corporate Events</p>
                         </li>
-                        <li class="nav-item"> 
+                        <li class=nav-item>
                             <p><i class="bi bi-dash"></i>Social Gathering Events</p>
-                         </li>
-                         <li class="nav-item">
+                        </li>
+                        <li class=nav-item>
                             <p><i class="bi bi-dash"></i>Conferences and Trade shows</p>
-                         </li>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 p-5">
@@ -428,43 +405,35 @@
                         United States <br><br>
                         <strong>Phone:</strong> +1 5589 55488 55<br>
                         <strong>Email:</strong> info@example.com<br>
-                      </p>
+                    </p>
                 </div>
             </div>
         </div>
-
     </footer>
-    <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target="_blank" class="btn-whatsapp">
+    <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target=_blank class=btn-whatsapp>
         <i class="bi bi-whatsapp"></i>
     </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin=anonymous referrerpolicy=no-referrer></script>
     <script>
         AOS.init({
             duration: 800,
         });
     </script>
-
-<script>
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const header = document.querySelector(".navbar");
-    const header_height = header.offsetHeight;
-
-    header.classList.toggle("scrolled", scrollY >= header_height);
-    header.classList.toggle("shadow-sm", scrollY >= header_height);
-
-    document.querySelector('.btn-whatsapp').style.display = scrollY > 100 ? "flex" : "flex";
-});
-
-const heroCarouselIndicators = document.querySelector("#hero-carousel-indicators");
-const indicatorsHTML = [...document.querySelectorAll("#heroCarousel .carousel-item")].map((_, index) =>
-    `<li data-bs-target='#heroCarousel' data-bs-slide-to='${index}'${index === 0 ? " class='active'" : ""}></li>`
-).join("");
-
-heroCarouselIndicators.innerHTML = indicatorsHTML;
-</script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const header = document.querySelector(".navbar");
+            const header_height = header.offsetHeight;
+            header.classList.toggle("scrolled", scrollY >= header_height);
+            header.classList.toggle("shadow-sm", scrollY >= header_height);
+            document.querySelector('.btn-whatsapp').style.display = scrollY > 100 ? "flex" : "flex";
+        });
+        const heroCarouselIndicators = document.querySelector("#hero-carousel-indicators");
+        const indicatorsHTML = [...document.querySelectorAll("#heroCarousel .carousel-item")].map((_, index) => `<li data-bs-target='#heroCarousel'data-bs-slide-to='${index}'${index===0?" class='active'":""}></li>`).join("");
+        heroCarouselIndicators.innerHTML = indicatorsHTML;
+    </script>
 </body>
 
 </html>
