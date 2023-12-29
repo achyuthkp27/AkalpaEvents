@@ -1,0 +1,15 @@
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
+
+# Enable URL Rewriting
+RewriteEngine On
+
+# Rewrite existing files without .html extension to their .html version
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Redirect requests for non-existing files or directories to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

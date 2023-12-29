@@ -14,7 +14,7 @@
     <meta name="HandheldFriendly" content="true" />
     <title>Akalpa Events</title>
     <link rel="stylesheet" href="css/theme.min.css" />
-    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -57,18 +57,16 @@
                 </svg>
                 <span class="ms-1 fw-bolder">Akalpa Events</span>
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="content.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index" aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -78,34 +76,25 @@
         <div class="w-100 overflow-hidden bg-gray-100" id="top">
             <!-- ======= Hero Section ======= -->
             <section id="hero">
-                <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
                     <div class="carousel-inner" role="listbox">
-                        <!-- Slide 1 -->
                         <div class="carousel-item active" style="background-image: url(img/abstract2.jpg)">
                             <div class="carousel-container">
                                 <div class="container">
-
                                     <h2>Weddings</h2>
-                                    <p> Ut velit est quam dolor ad a aliquid qui aliquid.</p>
-
+                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid.</p>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Slide 2 -->
                         <div class="carousel-item" style="background-image: url(img/abstract3.jpg)">
                             <div class="carousel-container">
                                 <div class="container">
                                     <h2>Destinations</h2>
                                     <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.</p>
-
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Slide 3 -->
                         <div class="carousel-item" style="background-image: url(img/abstract4.jpg)">
                             <div class="carousel-container">
                                 <div class="container">
@@ -119,12 +108,13 @@
                     <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
-
+            
                     <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
             </section>
+            
             <!-- End Hero -->
             <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
                 <div class="row d-flex align-items-center justify-content-center py-vh-5">
@@ -400,17 +390,16 @@
                 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
                     <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services.html"><i class="bi bi-dash"></i>Services</a>
+                        <li class="nav-item">                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services"><i class="bi bi-dash"></i>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="content.html"><i class="bi bi-dash"></i>About Us</a>
+                            <a class="nav-link link-secondary ps-0" href="content"><i class="bi bi-dash"></i>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="gallery.html"><i class="bi bi-dash"></i>Gallery</a>
+                            <a class="nav-link link-secondary ps-0" href="gallery"><i class="bi bi-dash"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="contact-us.html"><i class="bi bi-dash"></i>Contact Us</a>
+                            <a class="nav-link link-secondary ps-0" href="contact-us"><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -448,9 +437,9 @@
     <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target="_blank" class="btn-whatsapp">
         <i class="bi bi-whatsapp"></i>
     </a>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         AOS.init({
             duration: 800,
@@ -458,25 +447,23 @@
     </script>
 
 <script>
-    let scrollpos = window.scrollY,
-        header = document.querySelector(".navbar"),
-        header_disp = document.querySelector(".navbar .container"),
-        header_height = header.offsetHeight;
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
 
-    const toggleClass = (element, className, state) => element.classList[state ? 'add' : 'remove'](className);
+    header.classList.toggle("scrolled", scrollY >= header_height);
+    header.classList.toggle("shadow-sm", scrollY >= header_height);
 
-    window.addEventListener('scroll', () => {
-        const shouldAddClass = (scrollpos = window.scrollY) >= header_height;
+    document.querySelector('.btn-whatsapp').style.display = scrollY > 100 ? "flex" : "flex";
+});
 
-        toggleClass(header, "scrolled", shouldAddClass);
-        toggleClass(header, "shadow-sm", shouldAddClass);
-        toggleClass(header_disp, "bg-white-100", !shouldAddClass);
-    });
+const heroCarouselIndicators = document.querySelector("#hero-carousel-indicators");
+const indicatorsHTML = [...document.querySelectorAll("#heroCarousel .carousel-item")].map((_, index) =>
+    `<li data-bs-target='#heroCarousel' data-bs-slide-to='${index}'${index === 0 ? " class='active'" : ""}></li>`
+).join("");
 
-    window.addEventListener('scroll', () => {
-        const whatsappButton = document.querySelector('.btn-whatsapp');
-        whatsappButton.style.display = window.scrollY > 100 ? "flex" : "flex";
-    });
+heroCarouselIndicators.innerHTML = indicatorsHTML;
 </script>
 </body>
 

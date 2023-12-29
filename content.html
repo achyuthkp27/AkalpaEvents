@@ -64,12 +64,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-6-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="content.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index" aria-label="Brings you to the frontpage">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="content">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -205,16 +204,16 @@
                     <h3 class="h6 mb-3">Useful Links</h3>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services.html"><i class="bi bi-dash"></i>Services</a>
+                            <a class="nav-link link-secondary ps-0" aria-current="page" href="services"><i class="bi bi-dash"></i>Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="content.html"><i class="bi bi-dash"></i>About Us</a>
+                            <a class="nav-link link-secondary ps-0" href="content"><i class="bi bi-dash"></i>About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="gallery.html"><i class="bi bi-dash"></i>Gallery</a>
+                            <a class="nav-link link-secondary ps-0" href="gallery"><i class="bi bi-dash"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary ps-0" href="contact-us.html"><i class="bi bi-dash"></i>Contact Us</a>
+                            <a class="nav-link link-secondary ps-0" href="contact-us"><i class="bi bi-dash"></i>Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -252,8 +251,8 @@
     <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target="_blank" class="btn-whatsapp">
         <i class="bi bi-whatsapp"></i>
     </a>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         AOS.init({
@@ -264,7 +263,6 @@
     <script>
         let scrollpos = window.scrollY,
             header = document.querySelector(".navbar"),
-            header_disp = document.querySelector(".navbar .container"),
             header_height = header.offsetHeight;
 
         const toggleClass = (element, className, state) => element.classList[state ? 'add' : 'remove'](className);
@@ -274,7 +272,6 @@
 
             toggleClass(header, "scrolled", shouldAddClass);
             toggleClass(header, "shadow-sm", shouldAddClass);
-            toggleClass(header_disp, "bg-white-100", !shouldAddClass);
         });
 
         window.addEventListener('scroll', () => {

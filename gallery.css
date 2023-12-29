@@ -295,7 +295,7 @@
 
 #hero .carousel-inner .carousel-item,
 #hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
+#hero .carousel-inner .active.carousel-item-end,#hero h2,#hero p {
     opacity: 0;
 }
 
@@ -306,6 +306,20 @@
     transition: 0.5s;
 }
 
+#hero .carousel-inner .active p,
+#hero .carousel-inner .active h2 {
+    transform: translateY(30px);
+  filter: blur(20px);
+  animation: showContent 0.5s 0.2s ease-in-out 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+  }
 #hero .carousel-inner .carousel-item-next,
 #hero .carousel-inner .carousel-item-prev,
 #hero .carousel-inner .active.carousel-item-start,
