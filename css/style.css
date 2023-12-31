@@ -456,7 +456,7 @@ a:hover {
 .groomsmen::before {
 	position: absolute;
 	content: "";
-	background: url(img/interior29.jpg);
+	background: url(../img/interior29.jpg);
 	width: 105px;
 	height: 94px;
 	bottom: 0px;
@@ -493,7 +493,7 @@ a:hover {
 	flex-wrap: wrap;
 }
 .about-sec {
-	background: url(img/about_bg.jpg);
+	background: url(../img/about_bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -529,3 +529,73 @@ a:hover {
 		padding-left: 0px;
 	}
 }
+
+.gift-overly {
+	position: relative;
+	z-index: 1;
+  }
+  .gift-overly::before {
+	background-image: -moz-linear-gradient(
+	  0deg,
+	  #fff 0%,
+	  rgba(215, 215, 215, 0.01) 99%,
+	  rgba(215, 215, 215, 0) 100%
+	);
+	background-image: -webkit-linear-gradient(
+	  0deg,
+	  #fff 0%,
+	  rgba(215, 215, 215, 0.01) 99%,
+	  rgba(215, 215, 215, 0) 100%
+	);
+	background-image: -ms-linear-gradient(
+	  0deg,
+	  #fff 0%,
+	  rgba(215, 215, 215, 0.01) 99%,
+	  rgba(215, 215, 215, 0) 100%
+	);
+  }
+  .gift-padding {
+	padding-top: 160px;
+	padding-bottom: 170px;
+  }
+  .gift-overly::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	content: "";
+	background-repeat: no-repeat;
+  }
+  .gift-area {
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  .gift-area .gift-caption h2 {
+	font-size: 70px;
+	font-weight: 700;
+	margin-bottom: 14px;
+	color: #362d2b;
+	font-family: "Playfair Display", serif;
+	line-height: 1.2;
+	text-transform: capitalize;
+	margin-bottom: 14px;
+  }
+  @media (max-width: 767px) {
+	.gift-area .gift-caption h2 {
+	  font-size: 44px;
+	  margin-bottom: 27px;
+	}
+  }
+  .gift-area .gift-caption p {
+	color: #362d2b;
+	font-size: 30px;
+	margin-bottom: 60px;
+	line-height: 1.3;
+  }
+  @media (max-width: 767px) {
+	.gift-area .gift-caption p {
+	  font-size: 18px;
+	}
+  }

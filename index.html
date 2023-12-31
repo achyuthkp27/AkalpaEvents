@@ -46,6 +46,16 @@
 </head>
 
 <body data-bs-spy=scroll data-bs-target=#navScroll>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/colorful.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <nav id=navScroll class="navbar navbar-expand-lg navbar-light fixed-top" tabindex=0>
         <div class=container>
             <a class="navbar-brand pe-4 fs-4" href=#>
@@ -165,6 +175,10 @@
                 <div class="row d-flex align-items-center justify-content-center py-vh-5">
                     <div class="col-12 col-xl-10">
                         <span class="h5 text-secondary fw-lighter">Our Mission</span>
+                        <span class="h5 text-secondary fw-lighter">https://samsaraweddings.com/</span>
+                        <span class="h5 text-secondary fw-lighter">https://samsaraweddings.com/about-us/</span>
+                        <span class="h5 text-secondary fw-lighter">https://www.marthastewart.com/6417/weddings</span>
+                        <span class="h5 text-secondary fw-lighter">https://www.tajhotels.com/en-in/wedding/</span>
                         <h1 class="display-huge mt-3 mb-3 lh-1" data-aos=fade-up>
                             Creating extraordinary events for those seeking something exceptional
                         </h1>
@@ -376,6 +390,19 @@
                         <p>
                             <a href=# class="link-fancy link-dark" data-aos=fade-left data-aos-delay=400>Learn more</a>
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gift-area gift-padding gift-overly" style="background-image: url(img/gft.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class=" offset-lg-1 col-12">
+                        <div class="gift-caption">
+                            <h2>The Best Gift</h2>
+                            <p>Will be your bresentation</p>
+                            <a href="#" class="btn">R.S.V.P</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -903,13 +930,20 @@
     <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target=_blank class=btn-whatsapp>
         <i class="bi bi-whatsapp"></i>
     </a>
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
+    
     <script>
-        window.addEventListener("load", function() {
-            const preloader = document.querySelector(".preloader");
-            preloader.classList.add("hide-preloader");
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('preloader-active');
+                if (preloader) {
+                    preloader.style.transition = 'opacity 0.5s ease';
+                    preloader.style.opacity = '0';
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }
+                document.body.style.overflow = 'visible';
+            }, 450);
         });
     </script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin=anonymous referrerpolicy=no-referrer></script>

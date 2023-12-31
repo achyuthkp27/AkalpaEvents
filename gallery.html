@@ -47,6 +47,16 @@
 </head>
 
 <body data-bs-spy=scroll data-bs-target=#navScroll>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/colorful.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <nav id=navScroll class="navbar navbar-expand-lg navbar-light fixed-top" tabindex=0>
         <div class=container>
             <a class="navbar-brand pe-4 fs-4" href=#>
@@ -441,13 +451,20 @@
     <a href="https://wa.me/+919380515942?text=Hey%20there!%0AI'd%20like%20to%20get%20more%20details%20about%20the%20event%20planning" target=_blank class=btn-whatsapp>
         <i class="bi bi-whatsapp"></i>
     </a>
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
+    
     <script>
-        window.addEventListener("load", function() {
-            const preloader = document.querySelector(".preloader");
-            preloader.classList.add("hide-preloader");
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('preloader-active');
+                if (preloader) {
+                    preloader.style.transition = 'opacity 0.5s ease';
+                    preloader.style.opacity = '0';
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }
+                document.body.style.overflow = 'visible';
+            }, 450);
         });
     </script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
