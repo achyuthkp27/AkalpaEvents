@@ -1,6 +1,9 @@
 svg {
 	width: 25px;
 }
+a{
+	
+}
 /* css slider */
 .slider {
 	color: #eee;
@@ -286,6 +289,10 @@ svg {
 	font-weight: 600;
 	margin-bottom: 5px;
 }
+.contact .info-item a{
+	text-decoration: none;
+	color:#fff;
+}
 .contact .info-item p {
 	padding: 0;
 	margin-bottom: 0;
@@ -409,6 +416,7 @@ svg {
 	margin: 10px;
 	background-color: var(--bs-dark);
 	color: var(--bs-light);
+	text-decoration: none;
 }
 .call-to-action .cta-btn:hover {
 	background: var(--bs-gray-900);
@@ -417,24 +425,8 @@ svg {
 .groomsmen {
 	background: #fff;
 	padding-top: 60px;
-	padding-bottom: 130px;
+	padding-bottom: 25px;
 	position: relative;
-}
-.groomsmen::before {
-	position: absolute;
-	content: "";
-	background: url(../img/interior29.jpg);
-	width: 105px;
-	height: 94px;
-	bottom: 0px;
-	margin: 0 auto;
-	display: block;
-	left: 0;
-	right: 0;
-	background-repeat: no-repeat;
-}
-.brid {
-	margin-bottom: 30px;
 }
 .brid figure {
 	margin: 0;
@@ -444,7 +436,7 @@ svg {
 	border-radius: 25px;
 }
 .brid h3 {
-	color: #252525;
+	color: #4c4c4c;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
@@ -475,10 +467,13 @@ svg {
 	position: relative;
 	margin: inherit;
 }
+.about-sec .titlepage h2 {
+	font-weight: 900;
+}
 .about-sec .titlepage span {
 	padding-bottom: 60px;
 	padding-top: 40px;
-	font-weight: 500;
+	font-weight: 200;
 }
 .about_img {
 	margin-right: -38px;
@@ -566,7 +561,21 @@ svg {
 	  font-size: 18px;
 	}
   }
-  .no-gutters .col-md-3 {
-	padding-right: 0;
-	padding-left: 0;
-  }
+  #set-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+#set-gallery .col-md-3 {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.custom-img {
+    width: 100%;
+    height: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}

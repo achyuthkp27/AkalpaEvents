@@ -2078,7 +2078,7 @@ html {
 .features .features-item .image-stack .stack-back {
 	grid-column: 4/-1;
 	grid-row: 1;
-	width: 100%;
+	width: 80%;
 	z-index: 1;
 }
 .features .features-item .image-stack .stack-front {
